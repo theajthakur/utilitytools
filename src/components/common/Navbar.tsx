@@ -4,6 +4,8 @@ import { useState } from "react"
 import { Search } from "lucide-react"
 import { ThemeToggle } from "./theme-toggle"
 import { CommandSearch } from "./command-search"
+import Image from "next/image"
+import Link from "next/link"
 
 export function Navbar() {
     const [open, setOpen] = useState(false)
@@ -15,10 +17,11 @@ export function Navbar() {
                     <div className="flex h-14 items-center gap-4">
 
                         {/* Logo */}
-                        <div className="flex items-center gap-2 font-semibold">
-                            <div className="h-7 w-7 rounded-md bg-primary" />
-                            <span className="hidden sm:inline">UtilityTools</span>
-                        </div>
+                        <Link href={"/"}>
+                            <div className="flex items-center gap-2 font-semibold">
+                                <Image src="/logo.png" alt="UtilityTools" width={30} height={24} />
+                                <span className="hidden sm:inline">UtilityTools</span>
+                            </div></Link>
 
                         {/* Search trigger */}
                         <button

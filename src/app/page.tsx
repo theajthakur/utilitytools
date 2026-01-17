@@ -1,5 +1,6 @@
 import React from 'react'
 import { ArrowRight, Code2, Calculator, RefreshCcw, Command, Zap, Search } from 'lucide-react'
+import { GithubStars } from '@/components/common/GithubStars'
 
 export default function page() {
   const tools = [
@@ -44,12 +45,13 @@ export default function page() {
   return (
     <div className="flex min-h-screen flex-col bg-background text-foreground">
       {/* Hero Section */}
-      <section className="relative flex flex-col items-center justify-center px-4 text-center min-h-[80vh] items-center">
-        <div className="absolute inset-0 -z-10 h-full w-full bg-background bg-[linear-gradient(to_right,#8080800a_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-[size:14px_24px]">
+      <section className="relative flex min-h-[80vh] flex-col items-center justify-center px-4 text-center">
+        <div className="absolute inset-0 -z-10 h-full w-full bg-background bg-[linear-gradient(to_right,#8080800a_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-size-[14px_24px]">
           <div className="absolute left-0 right-0 top-0 -z-10 m-auto h-[310px] w-[310px] rounded-full bg-primary/20 opacity-20 blur-[100px]"></div>
         </div>
 
         <div>
+          <GithubStars />
           <h1 className='text-6xl font-bold tracking-tight sm:text-8xl text-primary'>UTILITY TOOLS</h1>
           <p className='text-2xl tracking-tight text-foreground sm:text-4xl mt-4'>Solutions to your handy problems at a place.</p>
         </div>
