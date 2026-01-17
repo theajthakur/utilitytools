@@ -23,13 +23,13 @@ export function Navbar() {
                         {/* Search trigger */}
                         <button
                             onClick={() => setOpen(true)}
-                            className="hidden md:flex flex-1 justify-center"
+                            className="flex flex-1 items-center justify-center px-4"
                         >
-                            <div className="flex w-full max-w-md items-center rounded-md border border-muted/50 dark:border-muted px-3 py-2 text-sm text-muted-foreground">
-                                <Search className="mr-2 h-4 w-4" />
-                                Search tools…
-                                <kbd className="ml-auto rounded border px-1.5 text-xs">
-                                    Ctrl K
+                            <div className="flex w-full max-w-sm items-center rounded-md border border-muted/50 bg-muted/20 px-3 py-2 text-sm text-muted-foreground hover:bg-muted/50 hover:text-foreground transition-colors">
+                                <Search className="mr-2 h-4 w-4 shrink-0" />
+                                <span className="flex-1 text-left truncate">Search tools...</span>
+                                <kbd className="hidden sm:inline-flex ml-auto items-center gap-1 rounded border bg-muted px-1.5 font-mono text-[10px] font-medium opacity-100">
+                                    <span className="text-xs">⌘</span>K
                                 </kbd>
                             </div>
                         </button>
