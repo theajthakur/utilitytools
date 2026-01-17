@@ -42,7 +42,7 @@ export function CommandSearch({
     return (
         <Dialog open={open} onOpenChange={setOpen}>
             <DialogContent className="p-0">
-                <DialogTitle />
+                <DialogTitle className="hidden" />
                 <Command>
                     <CommandInput placeholder="Search tools..." />
                     <CommandList>
