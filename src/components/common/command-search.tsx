@@ -13,7 +13,8 @@ import {
 import { Search } from "lucide-react"
 import { useRouter } from "next/navigation"
 import { searchItems, SearchResult } from "@/lib/search"
-import { Category, Tool } from "@/data/categories"
+import { Category } from "@/data/categories"
+import { Tool } from "@/data/tools"
 
 export function CommandSearch({
     open,
@@ -47,8 +48,7 @@ export function CommandSearch({
             router.push(`/categories/${category.slug}`)
         } else {
             const tool = result.item as Tool
-            // Navigate to category for now, or specific tool route if/when available
-            router.push(`/categories/${tool.categorySlug}`)
+            router.push(`/tool/${tool.slug}`)
         }
         setOpen(false)
         setQuery("") // Reset query

@@ -1,4 +1,5 @@
-import { categories, tools, Category, Tool } from '@/data/categories'
+import { categories, Category } from '@/data/categories'
+import { tools, Tool } from '@/data/tools'
 
 export interface SearchResult {
     type: 'category' | 'tool'
