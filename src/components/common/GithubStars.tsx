@@ -28,13 +28,13 @@ export async function GithubStars() {
         <Link
             href="https://github.com/theajthakur/utilitytools"
             target="_blank"
-            className="mb-8 inline-flex items-center gap-2 rounded-full border border-border bg-muted/50 px-4 py-1.5 text-sm font-medium transition-colors hover:bg-muted"
+            className="inline-flex h-12 items-center justify-center gap-2 rounded-md border border-input bg-background px-8 text-sm font-medium shadow-sm transition-colors hover:bg-accent hover:text-accent-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring"
         >
-            <span className="flex items-center gap-1.5 text-muted-foreground">
-                <Star className="h-3.5 w-3.5 fill-primary text-primary" />
+            <span className="flex items-center gap-1.5">
+                <Star className="h-4 w-4 fill-primary text-primary" />
                 Star on GitHub
             </span>
-            <span className="h-4 w-px bg-border" />
+            <span className="h-4 w-px bg-border mx-1" />
             <span className="font-semibold">{stars}</span>
         </Link>
     );
